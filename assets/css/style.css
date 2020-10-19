@@ -1,0 +1,275 @@
+ html,
+ body {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .tittle {
+     background-color: black;
+     color: white;
+     text-transform: uppercase;
+     font-family: sans-serif;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 50px;
+     padding: 5px;
+     width: fit-content;
+ }
+ 
+ abbr[title] {
+     text-decoration: none;
+ }
+ 
+ .mainmenu {
+     width: 100%;
+     height: 50px;
+     background-color: black;
+     position: fixed;
+     display: flex;
+     justify-content: space-between;
+     padding-left: 0;
+     margin-top: 0;
+     margin-bottom: 0;
+     font-family: sans-serif;
+ }
+ 
+ .mainmenu a {
+     color: white;
+     text-transform: uppercase;
+     text-decoration: none;
+ }
+ 
+ .herosec {
+     height: 100vh;
+     width: 100%;
+     background-image: url('../images/heroimage.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .herosec h1 {
+     color: aliceblue;
+     line-height: 1.5em;
+     text-shadow: -3px 1px -7px #000;
+ }
+ 
+ .herosec header {
+     background-color: rgba(0, 0, 0, 0.5);
+     width: 200px;
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100%;
+ }
+ 
+ .open span {
+     font-weight: bold;
+ }
+ 
+ .container {
+     background-color: rgba(247, 227, 199, 0.281);
+ }
+ 
+ h4 {
+     margin: 0;
+ }
+ 
+ .container>section {
+     width: 60%;
+     text-align: justify;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     margin-bottom: 0;
+ }
+ 
+ .about figure {
+     margin-left: 0px;
+ }
+ 
+ .about figure img {
+     width: 105%
+ }
+ 
+ .cofeenews {
+     border-left: 6px solid rgba(53, 53, 13, 0.123);
+     padding-left: 15px;
+     background-color: rgba(192, 192, 192, 0.11);
+ }
+ 
+ .text {
+     font-style: italic;
+ }
+ 
+ .coffeemenu {
+     display: none;
+ }
+ 
+ .day-menu {
+     width: 96%;
+     position: relative;
+     box-shadow: 1px 1px 12px 12px #79554826;
+     padding: 30px 15px;
+     text-align: center;
+     display: block;
+     margin-left: -6px;
+     margin-right: 10px;
+ }
+ 
+ .day-menu label {
+     display: inline-block;
+     width: 49%;
+     padding: 0 15px;
+     line-height: 30px;
+     box-sizing: border-box;
+     text-align: center;
+     box-shadow: 1px 1px 12px 12px #79554826;
+ }
+ 
+ .day-menu [type="radio"] {
+     width: 50%;
+     height: 25px;
+     position: absolute;
+     opacity: 0;
+ }
+ 
+ .day-menu [type="radio"].eatinp {
+     top: 30px;
+     left: 0px;
+ }
+ 
+ .day-menu [type="radio"].drinkinp {
+     top: 30px;
+     right: 0px;
+ }
+ 
+ .chekeln {
+     width: 45%;
+     height: 25px;
+     background-color: rgba(233, 33, 33, 0);
+     position: absolute;
+     top: 30px;
+ }
+ 
+ .chekeln.eatoverlay {
+     left: 23px;
+     display: none;
+     background-color: gray;
+     padding-top: 5px;
+ }
+ 
+ .chekeln.drinkoverlay {
+     right: 23px;
+     display: none;
+     background-color: gray;
+     padding-top: 5px;
+ }
+ 
+ .day-menu [type="radio"]:checked.eatinp~.eata,
+ .day-menu [type="radio"]:checked.eatinp~.chekeln.eatoverlay {
+     display: block;
+ }
+ 
+ .day-menu [type="radio"]:checked.drinkinp~.drinka,
+ .day-menu [type="radio"]:checked.drinkinp~.chekeln.drinkoverlay {
+     display: block;
+ }
+ 
+ .coffeemenu {
+     display: none;
+     padding: 25px;
+ }
+ 
+ .rice {
+     text-align: left;
+     color: rgba(77, 74, 74, 0.712);
+ }
+ 
+ .rice dd {
+     margin: 0;
+     font-size: 15px;
+     margin-bottom: 25p;
+ }
+ 
+ .rice dt {
+     font-weight: bold;
+     font-size: 15px;
+     margin-bottom: 25px;
+ }
+ 
+ .second {
+     margin-left: -5px;
+     margin-right: 6px;
+ }
+ 
+ .map img {
+     margin-right: -9px;
+     margin-left: -55px;
+ }
+ 
+ .fyi {
+     width: 70%;
+     text-align: justify;
+     margin-left: 60px;
+     margin-right: auto;
+     padding-top: 40px;
+     padding-bottom: 40px;
+ }
+ 
+ .where {
+     width: 60%;
+     text-align: justify;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 40px;
+     padding-bottom: 40px;
+ }
+ 
+ mark {
+     background-color: black;
+     color: white;
+ }
+ 
+ .formcontrol {
+     width: 90%;
+     height: 2px;
+     padding: 30px;
+     border: 1px solid grey;
+     margin-bottom: 15px;
+ }
+ 
+ .textarea {
+     resize: vertical;
+ }
+ 
+ .textarea::placeholder {
+     color: pink
+ }
+ 
+ .footer {
+     text-align: center;
+     height: 50px;
+     background-color: rgba(192, 192, 192, 0.11);
+     font-size: 9px;
+     margin-top: 0px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+ }
+ 
+ .button {
+     background-color: black;
+     color: white;
+     width: 140px;
+     height: 50px;
+     text-transform: uppercase;
+     padding-left: 10px;
+     padding-right: 10px;
+     text-align: center;
+     border: none;
+ }
